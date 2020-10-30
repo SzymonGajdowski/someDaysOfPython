@@ -2,18 +2,18 @@ import sys
 import requests
 from datetime import datetime
 
-from formatting import format_msg
+from formatting import formatMsg
 
 def send(name, website=None, verbose=False):
     if website != None:
-        msg = format_msg(my_name=name, my_website=website)
+        msg = formatMsg(myName=name, myWebsite=website)
     else:
-        msg = format_msg(my_name=name)
+        msg = formatMsg(myName=name)
     if verbose:
         print(name, website)
 
     r = requests.get('https://httpbin.org/json')
-    if r.status_code == 100:
+    if r.status_code == 200:
         return r.json()
     else:
         return "There was an error"
