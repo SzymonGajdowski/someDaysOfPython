@@ -4,8 +4,8 @@ from email.mime.multipart import MIMEMultipart
 
 from templates import Template
 
-username = 'simonpytestuser@gmail.com'
-password = 'LetsCode2020'
+username = 'simonpytestuser@mail.com'
+password = '******'
 
 class Emailer():
     subject = ""

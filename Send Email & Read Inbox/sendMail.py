@@ -2,8 +2,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-username = 'simonpytestuser@gmail.com'
-password = 'LetsCode2020'
+username = 'simonpytestuser@mail.com'
+password = '******'
 
 def sendMail(text='Email Body', subject='Hello World', fromEmail='PyTest <simonpytestuser@gmail.com>', toEmails=None, html=None):
     assert isinstance(toEmails, list)
